@@ -5,58 +5,75 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-header, .hero, nav a {
+/* Hero Section */
+.hero {
     background-color: #001f3f; /* Navy blue */
     color: white;
-}
-
-.hero {
-    padding: 5em 1em;
-    color: white;
+    text-align: center;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
 }
 
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
+    margin-bottom: 1em;
 }
 
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0.5em 0;
 }
 
 .hero p {
     font-size: 1.1em;
-    max-width: 600px;
+    margin: 0.5em 0;
+    max-width: 80%;
+}
+
+.social-icons {
+    margin: 1em 0;
 }
 
 .social-icons a img {
     width: 30px;
     height: 30px;
     margin: 0 0.5em;
+    transition: transform 0.2s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
 }
 
 nav {
-    margin-top: 1em;
+    margin-top: 1.5em;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 1em;
     font-weight: bold;
+    margin: 0 1em;
+    transition: color 0.2s;
 }
 
 nav a:hover {
     color: #ddd;
 }
 
-/* Subpage Container */
+/* Other Page Content Container */
 .container {
     width: 80%;
     max-width: 800px;
