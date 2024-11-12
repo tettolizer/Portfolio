@@ -8,12 +8,13 @@ body {
     text-align: center;
 }
 
+header, .hero, nav a {
+    background-color: #001f3f; /* Navy blue */
+    color: white;
+}
+
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 5em 1em;
-    background: linear-gradient(to right, #333, #555);
     color: white;
 }
 
@@ -21,7 +22,6 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 1em;
     border: 2px solid #fff;
 }
 
@@ -32,11 +32,7 @@ body {
 
 .hero p {
     font-size: 1.1em;
-    max-width: 500px;
-}
-
-.social-icons {
-    margin: 1em 0;
+    max-width: 600px;
 }
 
 .social-icons a img {
@@ -45,8 +41,12 @@ body {
     margin: 0 0.5em;
 }
 
+nav {
+    margin-top: 1em;
+}
+
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     margin: 0 1em;
     font-weight: bold;
@@ -62,4 +62,24 @@ nav a:hover {
     max-width: 800px;
     margin: 2em auto;
     text-align: left;
+}
+
+h1 {
+    color: #001f3f;
+    font-size: 2em;
+    border-bottom: 2px solid #001f3f;
+    padding-bottom: 0.5em;
+}
+
+ul li {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f;
+    color: white;
+    padding: 1em;
+    text-align: center;
 }
